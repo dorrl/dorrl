@@ -3,6 +3,7 @@ import './App.css'
 const links = [
   { label: 'GitHub', value: 'github.com/dorrl', href: 'https://github.com/dorrl', type: 'github', external: true },
   { label: 'Discord', value: '@dorrl', href: 'https://discord.com/app', type: 'discord', external: true },
+  { label: 'Youtube', value: '@dordorrl', href: 'https://www.youtube.com/@dordorrl', type: 'youtube', external: true },
   { label: 'Email', value: 'dor@dorrl.com', href: 'mailto:dor@dorrl.com', type: 'email' },
 ]
 
