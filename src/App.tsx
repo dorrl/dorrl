@@ -3,7 +3,7 @@ import './App.css'
 const links = [
   { label: 'GitHub', value: 'github.com/dorrl', href: 'https://github.com/dorrl', type: 'github', external: true },
   { label: 'Discord', value: '@dorrl', href: 'https://discord.com/app', type: 'discord', external: true },
-  { label: 'Youtube', value: '@dordorrl', href: 'https://www.youtube.com/@dordorrl', type: 'youtube', external: true },
+  { label: 'YouTube', value: '@dordorrl', href: 'https://www.youtube.com/@dordorrl', type: 'youtube', external: true },
   { label: 'Email', value: 'dor@dorrl.com', href: 'mailto:dor@dorrl.com', type: 'email' },
 ]
 
@@ -14,7 +14,10 @@ function LinkIcon({ type }: { type: string }) {
   if (type === 'discord') {
     return <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M19.54 4.2A16.3 16.3 0 0 0 15.5 3l-.5 1.02a14.2 14.2 0 0 0-6 0L8.5 3a16.3 16.3 0 0 0-4.04 1.2C1.9 8.1 1.2 11.9 1.55 15.65a16.4 16.4 0 0 0 4.95 2.5l1.2-1.65c-.66-.25-1.3-.57-1.9-.94l.46-.36c3.67 1.7 7.65 1.7 11.28 0l.47.36c-.61.37-1.25.69-1.91.94l1.2 1.65a16.4 16.4 0 0 0 4.95-2.5c.41-4.36-.7-8.13-2.71-11.45ZM8.85 14.02c-1.07 0-1.94-.98-1.94-2.18s.85-2.18 1.94-2.18 1.95.98 1.94 2.18c0 1.2-.85 2.18-1.94 2.18Zm6.3 0c-1.07 0-1.94-.98-1.94-2.18s.85-2.18 1.94-2.18 1.95.98 1.94 2.18c0 1.2-.85 2.18-1.94 2.18Z"/></svg>
   }
-  return <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 5.5A3.5 3.5 0 0 1 7.5 2h9A3.5 3.5 0 0 1 20 5.5v.72a3.5 3.5 0 0 1-1.02 2.47l-6.98 6.98-6.98-6.98A3.5 3.5 0 0 1 4 6.22V5.5Zm0 6.06 5.17 5.17a4 4 0 0 0 5.66 0L20 11.56v6.94A3.5 3.5 0 0 1 16.5 22h-9A3.5 3.5 0 0 1 4 18.5v-6.94Z"/></svg>
+  if (type === 'youtube') {
+    return <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M23.5 6.2a3 3 0 0 0-2.1-2.1C19.55 3.6 12 3.6 12 3.6s-7.55 0-9.4.5A3 3 0 0 0 .5 6.2 31.5 31.5 0 0 0 0 12a31.5 31.5 0 0 0 .5 5.8 3 3 0 0 0 2.1 2.1c1.85.5 9.4.5 9.4.5s7.55 0 9.4-.5a3 3 0 0 0 2.1-2.1A31.5 31.5 0 0 0 24 12a31.5 31.5 0 0 0-.5-5.8ZM9.6 15.7V8.3l6.3 3.7-6.3 3.7Z"/></svg>
+  }
+  return <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 6.5A2.5 2.5 0 0 1 6.5 4h11A2.5 2.5 0 0 1 20 6.5v11a2.5 2.5 0 0 1-2.5 2.5h-11A2.5 2.5 0 0 1 4 17.5v-11Zm2 .3v.1l5.4 4.32a1 1 0 0 0 1.2 0L18 6.9v-.1a.5.5 0 0 0-.5-.5h-11a.5.5 0 0 0-.5.5Zm12 2.4-4.15 3.32a3 3 0 0 1-3.7 0L6 9.2v8.3a.5.5 0 0 0 .5.5h11a.5.5 0 0 0 .5-.5V9.2Z"/></svg>
 }
 
 function App() {
