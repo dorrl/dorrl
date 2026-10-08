@@ -22,7 +22,7 @@ function LinkIcon({ type }: { type: string }) {
 
 function App() {
   return (
-    <main className="site">
+    <main className="site"><div className="ambient ambient-one" aria-hidden="true" /><div className="ambient ambient-two" aria-hidden="true" />
       <header className="hero">
         <p className="eyebrow">dorrl</p>
         <h1>살아 숨쉬는 무언가</h1>
