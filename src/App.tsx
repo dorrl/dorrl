@@ -1,121 +1,63 @@
-import { useState } from 'react'
-import heroImg from './assets/hero.png'
-import reactLogo from './assets/react.svg'
-import viteLogo from './assets/vite.svg'
 import './App.css'
 
+const links = [
+  { label: 'GitHub', href: 'https://github.com/dorrl', external: true },
+  { label: 'Discord', href: 'https://discord.com/app', external: true },
+]
+
 function App() {
-  const [count, setCount] = useState(0)
-
   return (
-    <>
-      <section id="center">
-        <div className="hero">
-          <img src={heroImg} className="base" width="170" height="179" alt="" />
-          <img src={reactLogo} className="framework" alt="React logo" />
-          <img src={viteLogo} className="vite" alt="Vite logo" />
-        </div>
-        <div>
-          <h1>Get started</h1>
-          <p>
-            Edit <code>src/App.tsx</code> and save to test <code>HMR</code>
-          </p>
-        </div>
-        <button
-          type="button"
-          className="counter"
-          onClick={() => setCount((count) => count + 1)}
-        >
-          Count is {count}
-        </button>
-      </section>
+    <main className="site">
+      <header className="hero">
+        <p className="eyebrow">dorrl</p>
+        <h1>Developer · Student · Builder</h1>
+        <p className="intro">
+          만들고, 실험하고, 배우는 과정을 기록합니다.
+        </p>
 
-      <div className="ticks"></div>
+        <nav className="links" aria-label="외부 링크">
+          {links.map((link) => (
+            <a
+              key={link.label}
+              href={link.href}
+              target={link.external ? '_blank' : undefined}
+              rel={link.external ? 'noreferrer' : undefined}
+            >
+              {link.label}
+              <span aria-hidden="true">↗</span>
+            </a>
+          ))}
+        </nav>
+      </header>
 
-      <section id="next-steps">
-        <div id="docs">
-          <svg className="icon" role="presentation" aria-hidden="true">
-            <use href="/icons.svg#documentation-icon"></use>
-          </svg>
-          <h2>Documentation</h2>
-          <p>Your questions, answered</p>
-          <ul>
-            <li>
-              <a href="https://vite.dev/" target="_blank">
-                <img className="logo" src={viteLogo} alt="" />
-                Explore Vite
-              </a>
-            </li>
-            <li>
-              <a href="https://react.dev/" target="_blank">
-                <img className="button-icon" src={reactLogo} alt="" />
-                Learn more
-              </a>
-            </li>
-          </ul>
+      <section className="section" aria-labelledby="projects-title">
+        <div className="section-heading">
+          <p className="section-number">01</p>
+          <h2 id="projects-title">Projects</h2>
         </div>
-        <div id="social">
-          <svg className="icon" role="presentation" aria-hidden="true">
-            <use href="/icons.svg#social-icon"></use>
-          </svg>
-          <h2>Connect with us</h2>
-          <p>Join the Vite community</p>
-          <ul>
-            <li>
-              <a href="https://github.com/vitejs/vite" target="_blank">
-                <svg
-                  className="button-icon"
-                  role="presentation"
-                  aria-hidden="true"
-                >
-                  <use href="/icons.svg#github-icon"></use>
-                </svg>
-                GitHub
-              </a>
-            </li>
-            <li>
-              <a href="https://chat.vite.dev/" target="_blank">
-                <svg
-                  className="button-icon"
-                  role="presentation"
-                  aria-hidden="true"
-                >
-                  <use href="/icons.svg#discord-icon"></use>
-                </svg>
-                Discord
-              </a>
-            </li>
-            <li>
-              <a href="https://x.com/vite_js" target="_blank">
-                <svg
-                  className="button-icon"
-                  role="presentation"
-                  aria-hidden="true"
-                >
-                  <use href="/icons.svg#x-icon"></use>
-                </svg>
-                X.com
-              </a>
-            </li>
-            <li>
-              <a href="https://bsky.app/profile/vite.dev" target="_blank">
-                <svg
-                  className="button-icon"
-                  role="presentation"
-                  aria-hidden="true"
-                >
-                  <use href="/icons.svg#bluesky-icon"></use>
-                </svg>
-                Bluesky
-              </a>
-            </li>
-          </ul>
+        <div className="empty-projects">
+          <p>아직 공개할 프로젝트가 없습니다.</p>
+          <span>완성된 프로젝트를 하나씩 추가할 예정입니다.</span>
         </div>
       </section>
 
-      <div className="ticks"></div>
-      <section id="spacer"></section>
-    </>
+      <section className="section about" aria-labelledby="about-title">
+        <div className="section-heading">
+          <p className="section-number">02</p>
+          <h2 id="about-title">About</h2>
+        </div>
+        <p>
+          이것저것 만들고 실험하면서 배우고 있습니다.
+          <br />
+          관심 있는 기술을 직접 사용해 보고, 필요한 것을 만들어 갑니다.
+        </p>
+      </section>
+
+      <footer>
+        <span>© 2026 dorrl</span>
+        <span>Built with React</span>
+      </footer>
+    </main>
   )
 }
 
