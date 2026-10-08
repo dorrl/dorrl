@@ -2,7 +2,8 @@ import './App.css'
 
 const links = [
   { label: 'GitHub', href: 'https://github.com/dorrl', external: true },
-  { label: 'Discord', href: 'https://discord.com/app', external: true },
+  { label: 'Discord', href: '@dorrl', external: true },
+  { label: 'Email', href: 'dor@dorrl.com', external: true },
 ]
 
 function App() {
@@ -10,11 +11,28 @@ function App() {
     <main className="site">
       <header className="hero">
         <p className="eyebrow">dorrl</p>
-        <h1>Developer · Student · Builder</h1>
+        <h1>살아 숨쉬는 무언가</h1>
         <p className="intro">
-          만들고, 실험하고, 배우는 과정을 기록합니다.
+          생각이 있을수도 없을수도
         </p>
+      </header>
 
+      <section className="section" aria-labelledby="projects-title">
+        <div className="section-heading">
+          <p className="section-number">01</p>
+          <h2 id="projects-title">만든거</h2>
+        </div>
+        <div className="empty-projects">
+          <p>아직 뭔가 놓을게 없다.</p>
+          <span>언젠간 가득 차게 될지도</span>
+        </div>
+      </section>
+
+      <section className="section about" aria-labelledby="about-title">
+        <div className="section-heading">
+          <p className="section-number">02</p>
+          <h2 id="about-title">개인정보</h2>
+        </div>
         <nav className="links" aria-label="외부 링크">
           {links.map((link) => (
             <a
@@ -28,34 +46,10 @@ function App() {
             </a>
           ))}
         </nav>
-      </header>
-
-      <section className="section" aria-labelledby="projects-title">
-        <div className="section-heading">
-          <p className="section-number">01</p>
-          <h2 id="projects-title">Projects</h2>
-        </div>
-        <div className="empty-projects">
-          <p>아직 공개할 프로젝트가 없습니다.</p>
-          <span>완성된 프로젝트를 하나씩 추가할 예정입니다.</span>
-        </div>
-      </section>
-
-      <section className="section about" aria-labelledby="about-title">
-        <div className="section-heading">
-          <p className="section-number">02</p>
-          <h2 id="about-title">About</h2>
-        </div>
-        <p>
-          이것저것 만들고 실험하면서 배우고 있습니다.
-          <br />
-          관심 있는 기술을 직접 사용해 보고, 필요한 것을 만들어 갑니다.
-        </p>
       </section>
 
       <footer>
         <span>© 2026 dorrl</span>
-        <span>Built with React</span>
       </footer>
     </main>
   )
