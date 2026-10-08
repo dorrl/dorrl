@@ -2,23 +2,27 @@
 
 > 살아 숨쉬는 무언가
 
-생각이 있을수도 없을수도.
+생각이 있을수도 없을수도
 
-개인적으로 이것저것 만들고, 배우고, 실험합니다.
 
-## 지금은
+## 개인정보
 
-- 🧪 새로운 것들을 만들면서 배우는 중
-- 🌱 완성된 프로젝트는 하나씩 정리할 예정
-- 🎮 게임 / 웹 / 이것저것 관심 있음
+- https://dorrl.com
+- dor@dorrl.com
 
-## Links
+![Static Badge](https://img.shields.io/badge/%40dordorrl-%23FF0000?logo=youtube&logoColor=%23ffffff&link=https%3A%2F%2Fwww.youtube.com%2F%40dordorrl)
+![Static Badge](https://img.shields.io/badge/%40dorrl-5865F2?logo=Discord&logoColor=%23ffffff)
 
-- 🌐 [Homepage](https://dorrl.com)
-- 💻 [GitHub](https://github.com/dorrl)
-- 🎥 [YouTube](https://www.youtube.com/@dordorrl)
-- 💬 Discord: @dorrl
-- ✉️ Email: dor@dorrl.com
+## 쓸 수 있는 언어
+![Static Badge](https://img.shields.io/badge/-%233178C6?logo=typescript&logoColor=%23ffffff)
+![Static Badge](https://img.shields.io/badge/-%23F7DF1E?logo=javascript&logoColor=%23ffffff)
+![Static Badge](https://img.shields.io/badge/-%233776AB?logo=python&logoColor=%23ffffff)
+![Static Badge](https://img.shields.io/badge/-%23A8B9CC?logo=c&logoColor=%23ffffff)
+![Static Badge](https://img.shields.io/badge/-%2300599C?logo=cplusplus&logoColor=%23ffffff)
+
+한국어, 영어
+
+(React, Node js 다룰 수 있음)
 
 ---
 
