@@ -24,7 +24,7 @@
 .project-kind { color:var(--text); font-family:var(--mono); font-size:10px; letter-spacing:.1em; }
 .project-title-row { display:flex; align-items:center; gap:14px; margin:24px 0 10px; }
 .project-title-row h3 { margin:0; color:var(--text-h); font-size:26px; font-weight:650; letter-spacing:-.04em; }
-.mulay-icon { display:grid; flex:0 0 52px; width:52px; height:52px; place-items:center; border-radius:14px; background-image: url("/src/assets/mulay.png"); background-size: 100%; }
+.mulay-icon { display:grid; flex:0 0 52px; width:52px; height:52px; place-items:center; border-radius:14px; background-image: url("./assets/mulay.png"); background-size: 100%; }
 .mulay-icon svg { width:27px; height:27px; fill:currentColor; }
 .project-description { max-width:640px; margin:0; color:var(--text); font-size:15px; line-height:1.8; }
 .project-tags { display:flex; flex-wrap:wrap; gap:7px; margin-top:24px; }
