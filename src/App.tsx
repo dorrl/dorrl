@@ -34,9 +34,21 @@ function App() {
           <p className="section-number">01</p>
           <h2 id="projects-title">만든거</h2>
         </div>
-        <div className="empty-projects">
-          <p>아직 뭔가 놓을게 없다.</p>
-          <span>언젠간 가득 차게 될지도</span>
+        <div className="project-grid">
+          <article className="project-card project-card--mulay">
+            <div className="project-card-top">
+              <span className="project-index">01</span>
+              <span className="project-kind">WEB PROJECT</span>
+            </div>
+            <h3>Mulay</h3>
+            <p className="project-description">여러 사람이 함께 듣는 실시간 음악방. YouTube 재생 동기화와 공동 대기열, 채팅, 투표 기능을 제공합니다.</p>
+            <div className="project-tags" aria-label="사용 기술">
+              <span>React</span>
+              <span>TypeScript</span>
+              <span>Express</span>
+              <span>Socket.IO</span>
+            </div>
+          </article>
         </div>
       </section>
 
