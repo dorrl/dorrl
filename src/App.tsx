@@ -26,10 +26,10 @@ function App() {
       <header className="hero">
         <div className="hero-profile">
           <div className="profile-avatar" aria-label="프로필 사진 자리">
-            <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="8" r="3.5" /><path d="M5.5 20v-1.4a6.5 6.5 0 0 1 13 0V20Z" /></svg>
+            <div className="profile-image"></div>
           </div>
           <div className="hero-copy">
-            <p className="eyebrow">dorrl</p>
+            <p className="eyebrow">도르돌</p>
             <h1>살아 숨쉬는 무언가</h1>
             <p className="intro">생각이 있을수도 없을수도</p>
           </div>
@@ -42,25 +42,17 @@ function App() {
           <h2 id="projects-title">만든거</h2>
         </div>
         <div className="project-grid">
-          <article className="project-card project-card--mulay">
+          <a className="project-card project-card--mulay" href="https://mulay.dorrl.com" rel="noreferrer" target="_blank">
             <div className="project-card-top">
               <span className="project-index">01</span>
-              <span className="project-kind">WEB PROJECT</span>
+              <span className="project-kind">Online</span>
             </div>
             <div className="project-title-row">
-              <div className="mulay-icon" aria-label="Mulay 아이콘 자리">
-                <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M14 3v12.2a3.7 3.7 0 1 1-2-3.3V7l8-2v8.2a3.7 3.7 0 1 1-2-3.3V3.5Z" /></svg>
-              </div>
+              <div className="mulay-icon" aria-label="Mulay 아이콘 자리"></div>
               <h3>Mulay</h3>
             </div>
-            <p className="project-description">여러 사람이 함께 듣는 실시간 음악방. YouTube 재생 동기화와 공동 대기열, 채팅, 투표 기능을 제공합니다.</p>
-            <div className="project-tags" aria-label="사용 기술">
-              <span>React</span>
-              <span>TypeScript</span>
-              <span>Express</span>
-              <span>Socket.IO</span>
-            </div>
-          </article>
+            <p className="project-description">모두가 음악을 추천하고, 추천된 음악을 들을 수 있습니다.</p>
+          </a>
         </div>
       </section>
 

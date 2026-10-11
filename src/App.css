@@ -2,8 +2,8 @@
 .site { position:relative; width:min(1040px,calc(100% - 40px)); margin:0 auto; padding:96px 0 40px; box-sizing:border-box; }
 .hero { position:relative; padding:34px 0 104px; animation:rise .8s cubic-bezier(.2,.7,.2,1) both; }
 .hero-profile { display:flex; align-items:center; gap:32px; }
-.profile-avatar { display:grid; flex:0 0 124px; width:124px; height:124px; place-items:center; overflow:hidden; border:1px solid rgba(185,243,107,.42); border-radius:50%; color:var(--accent); background:linear-gradient(145deg,#20291f,#121713); box-shadow:inset 0 0 0 6px rgba(185,243,107,.035); }
-.profile-avatar svg { width:48px; height:48px; fill:currentColor; opacity:.72; }
+.profile-avatar { display:grid; flex:0 0 124px; width:124px; height:124px; place-items:center; overflow:hidden; border-radius:50%; color:var(--accent); background:linear-gradient(145deg,#20291f,#121713); box-shadow:inset 0 0 0 6px rgba(185,243,107,.035); }
+.profile-image { width: 100%; height: 100%; background-image: url("src/assets/profile.png"); background-size: 100%; }
 .hero-copy { min-width:0; }
 
 .eyebrow,.section-number { margin:0; color:var(--accent); font-family:var(--mono); font-size:14px; letter-spacing:.08em; }
@@ -24,7 +24,7 @@
 .project-kind { color:var(--text); font-family:var(--mono); font-size:10px; letter-spacing:.1em; }
 .project-title-row { display:flex; align-items:center; gap:14px; margin:24px 0 10px; }
 .project-title-row h3 { margin:0; color:var(--text-h); font-size:26px; font-weight:650; letter-spacing:-.04em; }
-.mulay-icon { display:grid; flex:0 0 52px; width:52px; height:52px; place-items:center; border:1px solid rgba(185,243,107,.28); border-radius:14px; color:#b9f36b; background:#1b2419; }
+.mulay-icon { display:grid; flex:0 0 52px; width:52px; height:52px; place-items:center; border-radius:14px; background-image: url("/src/assets/mulay.png"); background-size: 100%; }
 .mulay-icon svg { width:27px; height:27px; fill:currentColor; }
 .project-description { max-width:640px; margin:0; color:var(--text); font-size:15px; line-height:1.8; }
 .project-tags { display:flex; flex-wrap:wrap; gap:7px; margin-top:24px; }
