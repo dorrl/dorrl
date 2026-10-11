@@ -24,9 +24,16 @@ function App() {
   return (
     <main className="site"><div className="ambient ambient-one" aria-hidden="true" /><div className="ambient ambient-two" aria-hidden="true" />
       <header className="hero">
-        <p className="eyebrow">dorrl</p>
-        <h1>살아 숨쉬는 무언가</h1>
-        <p className="intro">생각이 있을수도 없을수도</p>
+        <div className="hero-profile">
+          <div className="profile-avatar" aria-label="프로필 사진 자리">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="8" r="3.5" /><path d="M5.5 20v-1.4a6.5 6.5 0 0 1 13 0V20Z" /></svg>
+          </div>
+          <div className="hero-copy">
+            <p className="eyebrow">dorrl</p>
+            <h1>살아 숨쉬는 무언가</h1>
+            <p className="intro">생각이 있을수도 없을수도</p>
+          </div>
+        </div>
       </header>
 
       <section className="section" aria-labelledby="projects-title">
@@ -40,7 +47,12 @@ function App() {
               <span className="project-index">01</span>
               <span className="project-kind">WEB PROJECT</span>
             </div>
-            <h3>Mulay</h3>
+            <div className="project-title-row">
+              <div className="mulay-icon" aria-label="Mulay 아이콘 자리">
+                <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M14 3v12.2a3.7 3.7 0 1 1-2-3.3V7l8-2v8.2a3.7 3.7 0 1 1-2-3.3V3.5Z" /></svg>
+              </div>
+              <h3>Mulay</h3>
+            </div>
             <p className="project-description">여러 사람이 함께 듣는 실시간 음악방. YouTube 재생 동기화와 공동 대기열, 채팅, 투표 기능을 제공합니다.</p>
             <div className="project-tags" aria-label="사용 기술">
               <span>React</span>
